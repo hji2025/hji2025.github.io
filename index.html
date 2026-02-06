@@ -228,6 +228,11 @@
       background: #111827;
       color: #f9fafb;
       cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      text-decoration: none;
     }
 
     .btn-ghost {
@@ -236,11 +241,20 @@
       padding-left: 0;
     }
 
-    .btn-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 9999px;
-      background: #22c55e;
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+    }
+
+    .btn-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: #22c55e;
+      stroke-width: 1.7;
     }
 
     .section {
@@ -434,7 +448,12 @@
 
           <div class="hero-cta" aria-label="연락 및 포트폴리오">
             <a class="btn-primary" href="mailto:jeain37@gmail.com">
-              <span class="btn-dot"></span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="4" width="14" height="12" rx="2" ry="2"></rect>
+                  <path d="M4 5.5L10 10L16 5.5"></path>
+                </svg>
+              </span>
               <span>이메일로 연결하기</span>
             </a>
             <div class="btn-ghost">
